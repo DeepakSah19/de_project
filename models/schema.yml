@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: thirty_nine
+    description: "Inventory Analysis "
+
+  - name: forty_seven
+    description: "Sales Deviation Analysis"
+
+
+
+sources:
+  - name: de_project
+    description: 'Sample database for dbt testing'
+    database: snowflake_sample_data
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: item
+        description: 'Table containing item information'
+      - name: store_sales
+        description: 'Table containing store sales data'
+      - name: date_dim
+        description: 'Table containing date dimension data'
+      - name: store
+        description: 'Table containing store information'
+      - name: inventory
+        description: 'Table containing inventory information'
+      - name: warehouse
+        description: 'Table containing warehoues information'
